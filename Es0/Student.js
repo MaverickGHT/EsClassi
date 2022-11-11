@@ -14,8 +14,20 @@ const Student = class {
     };
 
     getMotto(){
-        return console.log("Il motto di "+ this.nome + " è: " + this.motto);
+        return this.motto;
     };
+
+    haveSameMotto (motto1, motto2) {
+        if (motto1==motto2) {
+            return true;
+        }
+        return false;
+    }
+
+    compareAge(age1, age2) {
+        if (age1 < age2) {return true;}
+        return false;
+    }
 }
 
 module.exports = Student

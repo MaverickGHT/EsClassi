@@ -20,9 +20,15 @@ const Stringsplitter = class {
             if (j==this.toBeSplit.length+1) {break;}
         }
 
-        return splits.toString();
+        return splits;
     };
 
+    getEachOtherSplits (splits1, splits2) {
+        let splits3 = [];
+        splits3.push(splits1);
+        splits3.push(splits2);
+        return splits3;
+    }
     
 
 }

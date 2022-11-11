@@ -30,6 +30,16 @@ const GeometricShape = class {
         return this.base*this.height;
     }
 
+    compareShapes (shape1, shape2) {
+        if (shape1 > shape2) {return true;}
+        return false;
+    }
+
+    drawShapes() {
+        for (let i=0; i<this.height; i++) {
+            console.log("- ".repeat(this.base));
+        }
+    }
 }
 
 module.exports = GeometricShape;
