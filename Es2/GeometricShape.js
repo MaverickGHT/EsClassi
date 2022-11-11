@@ -37,7 +37,7 @@ const GeometricShape = class {
 
     drawShapes() {
         for (let i=0; i<this.height; i++) {
-            console.log("- ".repeat(this.base));
+            console.log("-  ".repeat(this.base));
         }
     }
 }
